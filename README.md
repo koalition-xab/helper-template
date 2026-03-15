@@ -15,7 +15,7 @@ Typst template package for all XAB helpers
 )
 ```
 
-> [!TIP] Optional Parameters
+> [!TIP]
 > Named parameters are optional\
 > `title` defaults to "Zusammenfassung"\
 > `doc_version` defualts to "v1.0"
@@ -29,7 +29,7 @@ XAB Helpers styles certain elements by default
 Table elements are styled using alternating row-colors and a subtle border radius:
 ![Example table with alternating row colors](docs/img/table_alternating.png)
 
-> [!TIP] Automatic Headers
+> [!TIP]
 > You don't manually have to make your table header bold. XAB Helper Template can do this for you:\
 > Label your table with either `top-header`, `side-header` or `both-header`:
 >
