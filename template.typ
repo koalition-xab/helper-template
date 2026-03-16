@@ -75,6 +75,7 @@
     title: test_name,
   )
   set text(font: config.font, lang: "de", size: config.font_sizes.text)
+  show heading: set text(font: "Montserrat")
   set page(margin: 2cm, numbering: "1")
   set heading(numbering: "1.1")
 
@@ -174,10 +175,16 @@
     #page(margin: 0pt)[
       #header(subject, title, test_name, doc_version, logo_type, config)
       #block(inset: (top: 1cm, rest: config.margins))[
-        #outline()
+        #outline(depth: 3)
       ]
     ]
     #counter(page).update(1)
+    // Left bar
+    #set page(background: {
+      align(left)[
+        #rect(fill: colors.primary, height: 100%, width: .5cm)
+      ]
+    })
     #body
   ]
 }
