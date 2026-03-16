@@ -75,6 +75,7 @@
     title: test_name,
   )
   set text(font: config.font, lang: "de", size: config.font_sizes.text)
+  show heading: set text(font: "Montserrat")
   set page(margin: 2cm, numbering: "1")
   set heading(numbering: "1.1")
 
