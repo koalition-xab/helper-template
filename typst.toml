@@ -1,0 +1,4 @@
+[package]
+name="xab-template"
+version="1.0.0"
+entrypoint="template.typ"
