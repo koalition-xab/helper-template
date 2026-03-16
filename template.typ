@@ -175,7 +175,7 @@
     #page(margin: 0pt)[
       #header(subject, title, test_name, doc_version, logo_type, config)
       #block(inset: (top: 1cm, rest: config.margins))[
-        #outline()
+        #outline(depth: 3)
       ]
     ]
     #counter(page).update(1)
