@@ -8,11 +8,13 @@ echo "#################### STARTING INSTALL ####################"
 LINK="https://github.com/koalition-xab/xab-template.git"
 DESTINATION="/home/$USER/.local/share/typst/packages/local/xab-template/"
 VERSION="1.0.0"
+TARGET="${DESTINATION}${VERSION}"
 
 
 ########## SCRIPT ##########
-git clone $LINK $DESTINATION$VERSION
-cd $DESTINATION$VERSION
+mkdir -p "/home/$USER/.local/share/typst/packages/local/"
+git clone $LINK $TARGET
+cd $TARGET
 git submodule init
 git submodule update
 
