@@ -11,7 +11,7 @@ New-Item -ItemType Directory -Force -Path $TargetPath | Out-Null
 
 Write-Host "Cloning repository..."
 git clone $Link $TargetPath
-cd xab-template
+cd $TargetPath
 git submodule init
 git submodule update
 
