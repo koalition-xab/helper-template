@@ -1,0 +1,12 @@
+########## XAB-TEMPLATE: INSTALL SCRIPT FOR WINDOWS ##########
+
+$Link = "https://github.com/koalition-xab/xab-template.git"
+$Destination = "$env:USERPROFILE\.local\share\typst\packages\local\xab-template\"
+$Version = "1.0.0"
+
+$TargetPath = "$Destination$Version"
+
+Write-Host "Cloning repository..."
+git clone $Link $TargetPath
+
+Write-Host "Done."
