@@ -1,0 +1,3 @@
+[submodule "branding"]
+	path = branding
+	url = git@github.com:koalition-xab/branding.git

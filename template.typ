@@ -44,7 +44,7 @@
         #doc_version
       ],
       image(
-        "logos/" + subject + "/XAB_" + logo_type + "_" + subject + ".svg",
+        "branding/" + subject + "/XAB_" + logo_type + "_" + subject + ".svg",
         height: 3cm,
       ),
     )
