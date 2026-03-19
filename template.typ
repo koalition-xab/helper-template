@@ -195,8 +195,11 @@
     Die Nutzung der Inhalte erfolgt auf eigene Gefahr.
 
     = Spenden
-    Aufgrund betrieblicher Organisation werden zurzeit keine Spenden über digitale Wege
-    entgegengenommen. Spenden werden daher nur über bares Geld angenommen.
+    Spenden sind sowohl in bar als auch über PayPal möglich. Barspenden werden bevorzugt, da bei PayPal Gebühren anfallen. Für Barspenden wenden Sie sich bitte an:
+    - Awan Moeez (BHITS)
+    - Fritz Lukas (AHITS)
+    #underline(link("https://www.paypal.com/donate/?hosted_button_id=RUZ6T9W2RK968")[Hier]) finden Sie unsere PayPal-Spendenseite. Der zugehörige QR-Code ist im Anschluss abgebildet.
+    #image("docs/img/xab-donations-qr-code.png", width: 25%)
   ]
 }
 
