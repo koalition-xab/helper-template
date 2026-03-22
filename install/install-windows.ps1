@@ -17,18 +17,24 @@ $TARGET = "$DESTINATION$VERSION"
 # Ensure base directory exists (like mkdir -p)
 New-Item -ItemType Directory -Force -Path $DESTINATION | Out-Null
 
-# Check if already installed
-if (Test-Path $TARGET) {
-    Write-Host "Already installed at $TARGET"
-    Write-Host "#################### All done :) ####################"
-    exit 0
+if (Test-Path "$TARGET\.git") {
+    Write-Host "Existing installation found at $TARGET"
+    Write-Host "Updating template..."
+    Set-Location $TARGET
+    git pull --ff-only
+    git submodule update --init --recursive
 }
-
-# Clone repository with submodules
-git clone $LINK $TARGET
-cd $TARGET
-git submodule init
-git submodule update
+elseif (Test-Path $TARGET) {
+    Write-Host "Target path exists but is not a git repository: $TARGET"
+    Write-Host "Please remove it manually and run this script again."
+    exit 1
+}
+else {
+    Write-Host "Installing template to $TARGET"
+    git clone $LINK $TARGET
+    Set-Location $TARGET
+    git submodule update --init --recursive
+}
 
 ########## FINISH ##########
 Write-Host "#################### All done :) ####################"

@@ -2,7 +2,7 @@
 
 Typst template package for all XAB helpers
 
-## INSTALL / SETUP
+## INSTALL / UPDATE
 
 ### Linux
 
@@ -11,6 +11,8 @@ run the following command in your terminal:
 ```bash
 curl -fsSL https://raw.githubusercontent.com/koalition-xab/xab-template/main/install/install-linux.sh | bash
 ```
+
+Running the script again updates your existing template installation.
 
 ### Windows
 
@@ -25,6 +27,8 @@ or you can also run the following command in powershell/cmd
 ```pwsh
 iwr https://raw.githubusercontent.com/koalition-xab/xab-template/main/install/install-windows.ps1 -UseBasicParsing | iex
 ```
+
+Running the script again updates your existing template installation.
 
 ## Fonts
 
